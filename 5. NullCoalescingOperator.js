@@ -1,3 +1,6 @@
+// the ?? operator returns the value of the right hand operand only if the left operand is null or undefined.
+// Remember that the logical OR operator returns the right operand even if the left operand and is a falsy value - that is, a value that evaluates to false
+
 const someNullValue = null;
 const someUndefinedValue = undefined;
 const sumNumber = 0;
@@ -30,4 +33,5 @@ console.log(null ?? null); // null
 console.log(x ?? NaN); // 4711
 console.log(NaN ?? x); // NaN
 console.log(x ?? undefined); // 4711
+console.log(undefined ?? x); // 4711
 console.log(undefined ?? undefined); // undefined
