@@ -1,4 +1,4 @@
-// With ES2020, the optional chaining operator was fortunately included in the standard. This operator is place directly after a property when it is accessed, which ensures that the next hierarchy level is only accessed if the corresponding property exists. If it does not, the access attempt is aborted. 
+// With ES2020, the optional chaining operator (?) was fortunately included in the standard. This operator is place directly after a property when it is accessed, which ensures that the next hierarchy level is only accessed if the corresponding property exists. If it does not, the access attempt is aborted. 
 
 const john = {
     firstName: "John",

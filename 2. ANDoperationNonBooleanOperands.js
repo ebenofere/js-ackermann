@@ -1,3 +1,4 @@
+// AND Operation for Non-Boolean Operands
 // If the first operand evaluates to false, the first operand is returned.
 // A value that evaluates to false is also called a falsy value. Examples are the number 0, null or an empty string.
 // In all other cases, the second operand is returned.
