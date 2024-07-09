@@ -4,13 +4,15 @@ const testResult = 0;
 let icon = null;
 
 if (testResult === 0) {
-    icon = "pass.png";
+    icon = "./img/pass.png";
 } else if(testResult === 1) {
-    icon = "info.png";
+    icon = "./img/info.png";
 } else if(testResult === 2) {
-    icon = "warning.png";
+    icon = "./img/warning.png";
 } else if (testResult === 3) {
-    icon = "error.png";
+    icon = "./img/error.png";
 } else {
-    icon = "unknown.png"
+    icon = "./img/unknown.png"
 }
+
+testResultElement.src = icon; 
