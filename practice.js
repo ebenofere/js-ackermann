@@ -1,6 +1,8 @@
+const james = {
+    firstName: "James",
+}
 
-let a1 = undefined;
+james.firstName &&= "N'golo"
+james.lastName ||= "Kante"
 
-a1 ??= 400;
-
-console.log(a1);
+console.log(james)
