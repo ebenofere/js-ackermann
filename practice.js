@@ -1,14 +1,6 @@
-// null-coalescing operator
 
-const x = 4711;
+let a1 = undefined;
 
-console.log({} ?? x); // {}
-console.log(false ?? x); // false
-console.log(x ?? null); // 4711
-console.log(null ?? x); // 4711
-console.log(null ?? null); // null
-console.log(x ?? NaN); // 4711
-console.log(NaN ?? x); // NaN
-console.log(x ?? undefined); //4711
-console.log(undefined ?? x); //4711
-console.log(undefined ?? undefined); // undefined
+a1 ??= 400;
+
+console.log(a1);
