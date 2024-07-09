@@ -15,6 +15,10 @@ console.log(a);
 const b = someUndefinedValue ?? "Default value for undefined"
 console.log(b);
 
+// Left operand is 0 ("falsy") --> return left operand
+const c = someNumber ?? 80;
+console.log(c);
+
 // Left operand is an empty string ("falsy") --> return left operand
 const d = someText ?? "Default value for empty string";
 console.log(d);
