@@ -38,17 +38,99 @@
 
 
 // An example of how loops can be aborted via the break keyword
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log("Before the loop");
+
+// for(let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
+
+//     if(number % 2 === 1) {
+//         console.log("Odd number found.");
+//         break;
+//     }
+
+//     console.log(number);
+// }
+// console.log("After the loop");
+
+
+
+
+
+// Head-Controlled Loops can also be aborted via the break keyword
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log("Before the loop");
+
+// let i = 0;
+
+// while (i < number.length) {
+//     const number = numbers[i];
+
+//     if(number % 2 === 1) {
+//         console.log("Odd number found.");
+//         break;
+//     }
+
+//     console.log(number);
+//     i++;
+
+// }
+
+// console.log("After the loop");
+
+
+
+
+
+// Loop iterations can be aborted via the continue keyword
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log('Before the loop.');
+// for (let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
+
+//     if (number % 2 == 1) {
+//         console.log('Odd number found.');
+//         continue;
+//     }
+    
+//     console.log(number);
+// }
+// console.log('After the loop');
+
+
+
+
+
+// This code does not produce an infinite loop
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log('Before the loop.');
+// let i = 0;
+// while (i < numbers.length) {
+//     const number = numbers[i];
+//     i++;
+//     if (number % 2 === 1) {
+//         console.log('Odd number found');
+//         continue;
+//     };
+//     console.log(number);
+// }
+
+
+
+
+
+// This nested loop finds duplicate numbers in the array
 const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
-console.log("Before the loop");
-
-for(let i = 0; i < numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
+    
+    for (let j = i + 1; j < numbers.length; j++) {
+        const number2 = numbers[j];
+        console.log(`Compare ${number} with ${number2}`);
 
-    if(number % 2 === 1) {
-        console.log("Odd number found.");
-        break;
+        if (number === number2) {
+            console.log('Same numbers found');
+            continue;
+        }
     }
-
-    console.log(number);
-}
-console.log("After the loop");
+} 
