@@ -29,7 +29,7 @@
 
 
 
-
+// Via the arguments Object, all arguments of a function call are available within a function
 function printPersonInformation (firstName, lastName, age) {
     console.log(`First name: ${firstName}`);
     console.log(`Last name: ${lastName}`);
@@ -38,12 +38,12 @@ function printPersonInformation (firstName, lastName, age) {
     console.log(arguments);
 
     if (arguments.length > 3) {
-        console.log(`Size: ${arguments[3]}`);
+        console.log(`Age: ${arguments[2]} years old`);
     }
 
     if (arguments.length > 4) {
-        console.log(`Size: ${arguments[4]}`);
+        console.log(`Weight: ${arguments[3]} kg`);
     }
 }
 
-printPersonInformation("Lautaro", "Martinez", 28, "Argentina");
+printPersonInformation("Lautaro", "Martinez", 28, 75.3, "Argentina");
