@@ -162,6 +162,7 @@
 // Jump labels can be used to specify the target of a "continue" statement
 // The "continue outerLoop" statement then ensures that if a duplicate number is found, the process specifically jumps from the inner loop to the outer loop and continues with the next loop iteration of this outer loop.
 // const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+
 // outerLoop:
 // for (let i = 0; i < numbers.length; i++) {
 //     const number = numbers[i];

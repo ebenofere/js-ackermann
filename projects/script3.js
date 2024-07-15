@@ -1,6 +1,6 @@
 const sourceList = document.getElementById("source");
-const targetList = document.getElementById("target");
 const copyButton = document.getElementById("move");
+const targetList = document.getElementById("target");
 
 copyButton.addEventListener('click', function() {
     while(sourceList.hasChildNodes()) {
