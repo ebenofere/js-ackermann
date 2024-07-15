@@ -101,6 +101,26 @@
 
 
 
+// DO NOT RUN!! - This code would produce an infinite loop.
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log('Before the loop.');
+// let i = 0;
+// while (i < numbers.length) {
+//     const number = numbers[i];
+
+//     if (number % 2 === 1) {
+//         console.log('Odd number found');
+//         continue;
+//     };
+
+//     console.log(number);
+//     i++;
+// }
+
+
+
+
+
 // This code does not produce an infinite loop
 // const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
 // console.log('Before the loop.');
@@ -163,21 +183,21 @@
 
 // The program terminates when the first pair of numbers has been found
 // The statement "break outerLoop" ensures that if a duplicate number is found, the process jumps from the inner loop to the outer loop, but then the complete loop is aborted!
-const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
-outerLoop:
-for (let i = 0; i < numbers.length; i++) {
-    const number = numbers[i];
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// outerLoop:
+// for (let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
 
-    innerLoop:
-    for (j = i + 1; j < numbers.length; j++) {
-        const number2 = numbers[j];
-        console.log(`Compare ${number} with ${number2}`);
-        if (number === number2) {
-            console.log('Same numbers found');
-            break outerLoop;
-        }
-    }
-}
+//     innerLoop:
+//     for (j = i + 1; j < numbers.length; j++) {
+//         const number2 = numbers[j];
+//         console.log(`Compare ${number} with ${number2}`);
+//         if (number === number2) {
+//             console.log('Same numbers found');
+//             break outerLoop;
+//         }
+//     }
+// }
 
 
 

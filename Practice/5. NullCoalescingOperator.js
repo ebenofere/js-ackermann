@@ -1,5 +1,5 @@
 // the null-coalescing operator (??) returns the value of the right hand operand only if the left operand is null or undefined.
-// Remember that the logical OR operator returns the right operand even if the left operand and is a falsy value - that is, a value that evaluates to false
+// Remember that the logical OR operator returns the right operand even if the left operand is a falsy value - that is, a value that evaluates to false
 
 const someNullValue = null;
 const someUndefinedValue = undefined;
