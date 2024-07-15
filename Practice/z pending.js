@@ -1,3 +1,4 @@
+// MANIPULATING STRINGS VIA FUNCTIONS
 // Tagged templates are a way to parse template literals (strings enclosed in backticks `) with a function. They allow you to process the template literal and modify its output before it's returned.
 
 // Template literals are a way to work with strings. They are enclosed in backticks and can include placeholders (variables or expressions) using the ${...} syntax.
@@ -22,17 +23,20 @@
 
 // Example of a Tagged Function
 // Let's create a tagged function that capitalizes the placeholders.
-function capitalize(strings, ...values) {
-    const capitalizedValues = values.map(value => value.toUpperCase());
-    let result = "";
-    strings.forEach((string, i) => {
-        result += string + (capitalizedValues[i] || "");
-    });
-    return result;
-}
+// function capitalize(strings, ...values) {
+//     console.log(strings, "strings");  // Array of string parts
+//     console.log(values, "values");   // Array of placeholder values
 
-const name = "Alice";
-const city = "Wonderland";
-const greeting = capitalize`Hello, ${name} from ${city}!`;
-console.log(greeting); // Output: Hello, ALICE from WONDERLAND!
+//     const capitalizedValues = values.map(value => value.toUpperCase());
+//     let result = "";
+//     strings.forEach((string, i) => {
+//         result += string + (capitalizedValues[i] || "");
+//     });
+//     return result;
+// }
+
+// const name = "Alice";
+// const city = "Wonderland";
+// const greeting = capitalize`Hello, ${name} from ${city}!`;
+// console.log(greeting); // Output: Hello, ALICE from WONDERLAND!
 
