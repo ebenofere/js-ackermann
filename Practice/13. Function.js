@@ -299,19 +299,73 @@
 
 
 // Implementation and usage of a Tag function
-function tagFunction(strings, ...replacements) {
-    const name = replacements[0];
-    const age = replacements[1];
+// function tagFunction(strings, ...replacements) {
+//     const name = replacements[0];
+//     const age = replacements[1];
+//     console.log(strings, "strings");
+//     console.log(replacements, "replacements");
 
-    if (age > 80) {
-        return `${strings[0]}${replacements[0]}`;
-    }
+//     if (age > 80) {
+//         return `${strings[0]}${replacements[0]}`;
+//     }
 
-    return `${strings[0]}${strings[1]}${age}${strings[2]}}`;
-}
+//     return `${strings[0]}${name}${strings[1]}${age}${strings[2]}}`;
+// }
 
-const name = "Bukayo Saka";
-const age = 22;
+// // example 1
+// const name = "Bukayo Saka";
+// const age = 22;
 
-let message = tagFunction`My name is ${name}, and I am ${age} years old`;
-console.log(message);
+// // example 2
+// // const name = "Alex Ferguson";
+// // const age = 82;
+
+// let message = tagFunction`My name is ${name}, and I am ${age} years old`;
+// console.log(message);
+
+
+
+
+
+// The "this" keyword in the context of an object refers to the object
+// const person = {
+//     name: "John",
+//     getName: function() {
+//         return this.name;
+//     }
+// }
+
+// console.log(person.getName());
+
+
+
+
+
+// A simple global function which is used
+// function getNameGlobal() {
+//     return this.name;
+// }
+
+// console.log(getNameGlobal()); // when this function is called, it refers to the global context. there, the variable "name" is not defined, so you get "undefined" as the return value
+
+
+
+
+
+// The "this" keyword refers to the context of the function
+// function getNameGlobal() {
+//     return this.name;
+// }
+
+// const person = {
+//     name: 'James',
+//     getName: getNameGlobal
+// }
+
+// const artist = {
+//     name: 'Rodriguez',
+//     getName: getNameGlobal
+// }
+
+// console.log(person.getName());
+// console.log(artist.getName());
