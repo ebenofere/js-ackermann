@@ -129,4 +129,189 @@
 // }
 
 // console.log(sum (-5, 5));
-// console.log(normalize(-5));
+// console.log(normalize(-5)); // normalize is not defined
+
+
+
+
+
+// A function that returns an object
+// function createUser(username, email, password) {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+// const john = createUser('Kylian Mbappe', 'kmbappe9@gmail.com', 'secret');
+// console.log(john);
+// console.log(john.username);
+// console.log(john.email);
+// console.log(john.password);
+
+
+
+
+
+// Default values in ES2015
+// function createUser(username, email, password = "DeFaUlTPaSsWoRd") {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+// const john = createUser('Kylian Mbappe', 'kmbappe9@gmail.com', 'secret');
+// console.log(john);
+// console.log(john.username);
+// console.log(john.email);
+// console.log(john.password);
+
+
+
+
+
+// Using array values as arguments of a function
+// function createUser(username, email, password) {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+// const userData1 = ['Jude Bellingham', 'jude210bell@gmail.com', 'secret3143'];
+// const userData2 = ['Bukayo Saka', 'bukayosaka@gmail.com', 'iBadan005!'];
+
+// const Jude = createUser(userData1[0], userData1[1], userData1[2]);
+// const Bukayo = createUser(userData2[0], userData2[1], userData2[2]);
+
+// console.log(Jude);
+// console.log(Bukayo);
+
+
+
+
+
+// Using array values as arguments to a function using the spread operator
+// function createUser(username, email, password) {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+// const userData1 = ['Jude Bellingham', 'jude210bell@gmail.com', 'secret3143'];
+// const userData2 = ['Bukayo Saka', 'bukayosaka@gmail.com', 'iBadan005!'];
+
+// const Jude = createUser(...userData1);
+// const Bukayo = createUser(...userData2);
+
+// console.log(Jude);
+// console.log(Bukayo);
+
+
+
+
+
+// The two different ways to write a function
+// const createUser = (username, email, password) => {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+// ...is the same as...
+
+// function createUser(username, email, password) {
+//     const user = {
+//         username: username,
+//         email: email,
+//         password: password
+//     }
+
+//     return user;
+// }
+
+
+
+
+
+// MANIPULATING STRINGS VIA FUNCTIONS
+// Tagged templates are a way to parse template literals (strings enclosed in backticks `) with a function. They allow you to process the template literal and modify its output before it's returned.
+
+// Template literals are a way to work with strings. They are enclosed in backticks and can include placeholders (variables or expressions) using the ${...} syntax.
+
+// A tagged template is a combination of a function (tag function) and a template literal. The tag function receives the template literal’s parts (strings and placeholders) and can manipulate or use them in any way.
+
+// Tagged functions are essentially the functions used in tagged templates. They allow you to manipulate the template literal's parts in any way you want.
+
+// function tag(strings, ...values) {
+//     console.log(strings, "strings");  // Array of string parts
+//     console.log(values, "values");   // Array of placeholder values
+//     return "Custom output";
+// }
+
+// const name = "Alice";
+// const greeting = tag`Hello, ${name}!`;
+// console.log(greeting); // Output: Custom output
+
+
+
+
+
+// Example of a Tagged Function
+// Let's create a tagged function that capitalizes the placeholders.
+// function capitalize(strings, ...values) {
+//     console.log(strings, "strings");  // Array of string parts
+//     console.log(values, "values");   // Array of placeholder values
+
+//     const capitalizedValues = values.map(value => value.toUpperCase());
+//     let result = "";
+//     strings.forEach((string, i) => {
+//         result += string + (capitalizedValues[i] || "");
+//     });
+//     return result;
+// }
+
+// const name = "Alice";
+// const city = "Wonderland";
+// const greeting = capitalize`Hello, ${name} from ${city}!`;
+// console.log(greeting); // Output: Hello, ALICE from WONDERLAND!
+
+
+
+
+
+// Implementation and usage of a Tag function
+function tagFunction(strings, ...replacements) {
+    const name = replacements[0];
+    const age = replacements[1];
+
+    if (age > 80) {
+        return `${strings[0]}${replacements[0]}`;
+    }
+
+    return `${strings[0]}${strings[1]}${age}${strings[2]}}`;
+}
+
+const name = "Bukayo Saka";
+const age = 22;
+
+let message = tagFunction`My name is ${name}, and I am ${age} years old`;
+console.log(message);
