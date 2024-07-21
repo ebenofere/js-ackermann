@@ -352,6 +352,19 @@
 
 
 
+// The "this" keyword in the global context refers to the global object
+// var name = "global name";
+
+// function getNameGlobal() {
+//     return this.name;
+// }
+
+// console.log(getNameGlobal()); // Output: global name
+
+
+
+
+
 // The "this" keyword refers to the context of the function
 // function getNameGlobal() {
 //     return this.name;
