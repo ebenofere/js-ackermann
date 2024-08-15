@@ -3,7 +3,7 @@
 
 const someNullValue = null;
 const someUndefinedValue = undefined;
-const sumNumber = 0;
+const someNumber = 0;
 const someText = "";
 const someBoolean = false;
 

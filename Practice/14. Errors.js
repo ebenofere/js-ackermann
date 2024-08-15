@@ -104,7 +104,7 @@
 
 
 
-
+    
 // One function can throw multiple errors
 console.log(checkAge(22)); // true
 console.log(checkAge("Gavi")); // Error: Age must be a number
