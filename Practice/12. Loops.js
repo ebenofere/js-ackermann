@@ -58,25 +58,24 @@
 
 
 // Head-Controlled Loops can also be aborted via the break keyword
-const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
-console.log("Before the loop");
+// const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
+// console.log("Before the loop");
 
-let i = 0;
+// let i = 0;
 
-while (i < number.length) {
-    const number = numbers[i];
+// while (i < numbers.length) {
+//     const number = numbers[i];
 
-    if(number % 2 === 1) {
-        console.log("Odd number found.");
-        break;
-    }
+//     if(number % 2 === 1) {
+//         console.log("Odd number found.");
+//         break;
+//     }
 
-    console.log(number);
-    i++;
+//     console.log(number);
+//     i++;
+// }
 
-}
-
-console.log("After the loop");
+// console.log("After the loop");
 
 
 
