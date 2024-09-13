@@ -16,12 +16,11 @@ const james = {
 if (john.contact && john.contact.email) {
     console.log(john.contact.email);
 }
-// Output: "john.doe@javascripthandbuch.com"
 
 // Runtime error!
 console.log(james.contact.email);
 
+// No output
 if (james.contact && james.contact.email) {
     console.log(james.contact.email);
 }
-// No output

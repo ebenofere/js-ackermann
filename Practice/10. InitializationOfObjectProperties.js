@@ -7,7 +7,7 @@ const james = {
 
 james.firstName ||= "John";
 james.lastName ||= "Doe";
-console.log(james); // { firstName: "James", lastName: "Doe" }
+console.log(james); 
 
 
 
@@ -19,4 +19,4 @@ const peter = {
 peter.firstName || (peter.firstName = "John");
 peter.lastName || (peter.lastName = "Doe");
 
-console.log(peter); // {firstName: "Peter", lastName: "Doe"}             
+console.log(peter); 
