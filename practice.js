@@ -1,12 +1,16 @@
-function sum(...numbers) {
-    let result = 0;
+function sum(x, y) {
+    const result = normalize(x) + normalize(y);
 
-    for (let i = 0; i < numbers.length; i++) {
-        result += numbers[i];
+    function normalize(i) {
+        if (i < 0) {
+            return 0;
+        }
+
+        return i;
     }
 
     console.log(result);
-
 }
 
-sum(1,2,3,4,5,6,7,8,9);
+// console.log(sum(-5,10));
+sum(-5,10);
