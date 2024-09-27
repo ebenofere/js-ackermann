@@ -1,5 +1,5 @@
 // a function that returns an object
-function createUser(name, email, password = "DeFaUltPaSsWoRd") {
+const createUser = (name, email, password = "DeFaUltPaSsWoRd") => {
     const user = {
         name: name,
         email: email,
