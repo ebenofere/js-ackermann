@@ -114,21 +114,21 @@
 
 
 // Functions can be defined within other functions
-function sum(x, y) {
-    const result = normalize(x) + normalize(y);
+// function sum(x, y) {
+//     const result = normalize(x) + normalize(y);
 
-    function normalize(i) {
-        if (i < 0) {
-            return 0;
-        }
+//     function normalize(i) {
+//         if (i < 0) {
+//             return 0;
+//         }
 
-        return i;
-    }
+//         return i;
+//     }
 
-    return result
-}
+//     return result
+// }
 
-console.log(sum (-5, 5));
+// console.log(sum (-5, 5));
 
 
 

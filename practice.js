@@ -1,19 +1,12 @@
-// jump labels can be used to specify the target of a continue statement. the continue outerloop statement then ensures that if a duplicate number is found, the process specifiically jumps from the inner loop to the outer loop and continues with the next loop iteration of this outer loop.
+function sum(...numbers) {
+    let result = 0;
 
-const numbers = [2, 4, 56, 22, 65, 2, 54, 88, 29];
-
-outerLoop:
-for (let i = 0; i < numbers.length; i++) {
-    const number = numbers[i];
-
-    innerLoop:
-    for (let j = i + 1; j < numbers.length; j++) {
-        const number2 = numbers[j];
-
-        console.log(`compare ${number} with ${number2}`);
-        if (number === number2) {
-            console.log("Same numbers found");
-            break outerLoop;
-        }
+    for (let i = 0; i < numbers.length; i++) {
+        result += numbers[i];
     }
+
+    console.log(result);
+
 }
+
+sum(1,2,3,4,5,6,7,8,9);
