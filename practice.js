@@ -1,16 +1,18 @@
-function sum(x, y) {
-    const result = normalize(x) + normalize(y);
-
-    function normalize(i) {
-        if (i < 0) {
-            return 0;
-        }
-
-        return i;
+// a function that returns an object
+function createUser(name, email, password = "DeFaUltPaSsWoRd") {
+    const user = {
+        name: name,
+        email: email,
+        password: password
     }
 
-    console.log(result);
+    return user;
 }
 
-// console.log(sum(-5,10));
-sum(-5,10);
+const userData1 = ["Jude Bellingham", "judepuci@gmail.com"];
+const userData2 = ["Lionel Messi", "lionelmessi@gmail.com", "mayben007!"];
+
+const Jude = createUser(...userData1);
+const Bukayo = createUser(...userData2);
+console.log(Jude);
+console.log(Bukayo);
